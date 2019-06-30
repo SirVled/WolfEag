@@ -1,0 +1,66 @@
+﻿<Window x:Class="WolfEag.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="400" Width="470" Loaded="LoadWindow" KeyDown="MoveBasket" ResizeMode="NoResize">
+    <Grid x:Name="GamePanel">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16" Margin="-10,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="20"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16" Margin="-10,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="20"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="16" Margin="0,120,-10,0" Stroke="Black" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-20"/>
+
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="16" Margin="0,200,-10,0" Stroke="Black" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-200"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Ellipse x:Name="PlatformStart_1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="463,75,-16,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="PlatformEnd_1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="303,134,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Visibility="Hidden" />
+
+        <Ellipse x:Name="PlatformStart_2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="465,159,-18,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="PlatformEnd_2"  Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="328,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Visibility="Hidden" />
+
+        <Ellipse x:Name="PlatformStart_3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="-20,76,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="PlatformEnd_3"  Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="138,134,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Visibility="Hidden" />
+
+        <Ellipse x:Name="PlatformStart_4"  Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="-20,161,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="PlatformEnd_4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="112,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Visibility="Hidden" />
+
+        <Rectangle x:Name="player" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="187" Margin="103,161,0,0" RadiusY="5.5" RadiusX="5.5" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="160"/>
+        <Rectangle x:Name="Basket" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="38" Margin="82,242,0,0" Stroke="Black" VerticalAlignment="Top" Width="68" RadiusY="5.5" RadiusX="5.5" StrokeThickness="0"/>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Label x:Name="Points" Content="Очки : 0"></Label>
+        </StackPanel>
+    </Grid>
+</Window>
